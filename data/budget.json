@@ -1,42 +1,545 @@
 {
-  "japan": {
-    "country": "Japan",
-    "bigMacPriceUSD": 3.08384987818793,
-    "comparedToKoreaPercent": -19.6,
-    "summary": "한국보다 약 20% 저렴해요",
-    "dataDate": "2026-07-01",
-    "updatedAt": "2026-09-02T04:46:21.740Z"
-  },
-  "vietnam": {
-    "country": "Vietnam",
-    "bigMacPriceUSD": 2.89463160099789,
-    "comparedToKoreaPercent": -24.5,
-    "summary": "한국보다 약 25% 저렴해요",
-    "dataDate": "2026-07-01",
-    "updatedAt": "2026-09-02T04:46:21.740Z"
-  },
-  "thailand": {
-    "country": "Thailand",
-    "bigMacPriceUSD": 4.01546698393813,
-    "comparedToKoreaPercent": 4.7,
-    "summary": "한국보다 약 5% 비싸요",
-    "dataDate": "2026-07-01",
-    "updatedAt": "2026-09-02T04:46:21.741Z"
-  },
-  "taiwan": {
-    "country": "Taiwan",
-    "bigMacPriceUSD": 2.42330097087379,
-    "comparedToKoreaPercent": -36.8,
-    "summary": "한국보다 약 37% 저렴해요",
-    "dataDate": "2026-07-01",
-    "updatedAt": "2026-09-02T04:46:21.741Z"
-  },
-  "philippines": {
-    "country": "Philippines",
-    "bigMacPriceUSD": 2.73972602739726,
-    "comparedToKoreaPercent": -28.6,
-    "summary": "한국보다 약 29% 저렴해요",
-    "dataDate": "2026-07-01",
-    "updatedAt": "2026-09-02T04:46:21.741Z"
+  "updatedAt": "2026-09-02T05:17:42.978Z",
+  "countries": {
+    "ARG": {
+      "isoCode": "ARG",
+      "country": "Argentina",
+      "currencyCode": "ARS",
+      "bigMacPriceUSD": 5.90636958170785,
+      "referenceRateToUSD": 1472.98605,
+      "comparedToKoreaPercent": 54,
+      "summary": "한국보다 약 54% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "AUS": {
+      "isoCode": "AUS",
+      "country": "Australia",
+      "currencyCode": "AUD",
+      "bigMacPriceUSD": 5.94957499999998,
+      "referenceRateToUSD": 1.42867347667691,
+      "comparedToKoreaPercent": 55.1,
+      "summary": "한국보다 약 55% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "AZE": {
+      "isoCode": "AZE",
+      "country": "Azerbaijan",
+      "currencyCode": "AZN",
+      "bigMacPriceUSD": 4.26470588235294,
+      "referenceRateToUSD": 1.7,
+      "comparedToKoreaPercent": 11.2,
+      "summary": "한국보다 약 11% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "BHR": {
+      "isoCode": "BHR",
+      "country": "Bahrain",
+      "currencyCode": "BHD",
+      "bigMacPriceUSD": 4.77390266542899,
+      "referenceRateToUSD": 0.37705,
+      "comparedToKoreaPercent": 24.4,
+      "summary": "한국보다 약 24% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "BRA": {
+      "isoCode": "BRA",
+      "country": "Brazil",
+      "currencyCode": "BRL",
+      "bigMacPriceUSD": 4.70532646893796,
+      "referenceRateToUSD": 5.07935,
+      "comparedToKoreaPercent": 22.7,
+      "summary": "한국보다 약 23% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "GBR": {
+      "isoCode": "GBR",
+      "country": "Britain",
+      "currencyCode": "GBP",
+      "bigMacPriceUSD": 7.40021836709936,
+      "referenceRateToUSD": 0.74187,
+      "comparedToKoreaPercent": 92.9,
+      "summary": "한국보다 약 93% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CAN": {
+      "isoCode": "CAN",
+      "country": "Canada",
+      "currencyCode": "CAD",
+      "bigMacPriceUSD": 5.81432587268263,
+      "referenceRateToUSD": 1.40515,
+      "comparedToKoreaPercent": 51.6,
+      "summary": "한국보다 약 52% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CHL": {
+      "isoCode": "CHL",
+      "country": "Chile",
+      "currencyCode": "CLP",
+      "bigMacPriceUSD": 5.40795370184727,
+      "referenceRateToUSD": 922.715,
+      "comparedToKoreaPercent": 41,
+      "summary": "한국보다 약 41% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CHN": {
+      "isoCode": "CHN",
+      "country": "China",
+      "currencyCode": "CNY",
+      "bigMacPriceUSD": 3.91386542210669,
+      "referenceRateToUSD": 6.7708,
+      "comparedToKoreaPercent": 2,
+      "summary": "한국보다 약 2% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "COL": {
+      "isoCode": "COL",
+      "country": "Colombia",
+      "currencyCode": "COP",
+      "bigMacPriceUSD": 8.0030158082737,
+      "referenceRateToUSD": 3236.28,
+      "comparedToKoreaPercent": 108.6,
+      "summary": "한국보다 약 109% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CRI": {
+      "isoCode": "CRI",
+      "country": "Costa Rica",
+      "currencyCode": "CRC",
+      "bigMacPriceUSD": 6.99564715288265,
+      "referenceRateToUSD": 450.28,
+      "comparedToKoreaPercent": 82.4,
+      "summary": "한국보다 약 82% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CZE": {
+      "isoCode": "CZE",
+      "country": "Czech Republic",
+      "currencyCode": "CZK",
+      "bigMacPriceUSD": 5.4341405788541,
+      "referenceRateToUSD": 21.1625,
+      "comparedToKoreaPercent": 41.7,
+      "summary": "한국보다 약 42% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "DNK": {
+      "isoCode": "DNK",
+      "country": "Denmark",
+      "currencyCode": "DKK",
+      "bigMacPriceUSD": 7.03729767769177,
+      "referenceRateToUSD": 6.5366,
+      "comparedToKoreaPercent": 83.5,
+      "summary": "한국보다 약 83% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "EGY": {
+      "isoCode": "EGY",
+      "country": "Egypt",
+      "currencyCode": "EGP",
+      "bigMacPriceUSD": 2.86958242628142,
+      "referenceRateToUSD": 50.53,
+      "comparedToKoreaPercent": -25.2,
+      "summary": "한국보다 약 25% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "EUZ": {
+      "isoCode": "EUZ",
+      "country": "Euro area",
+      "currencyCode": "EUR",
+      "bigMacPriceUSD": 7.07922094259998,
+      "referenceRateToUSD": 0.87439,
+      "comparedToKoreaPercent": 84.5,
+      "summary": "한국보다 약 85% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "GTM": {
+      "isoCode": "GTM",
+      "country": "Guatemala",
+      "currencyCode": "GTQ",
+      "bigMacPriceUSD": 4.46200081365897,
+      "referenceRateToUSD": 7.6199,
+      "comparedToKoreaPercent": 16.3,
+      "summary": "한국보다 약 16% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "HND": {
+      "isoCode": "HND",
+      "country": "Honduras",
+      "currencyCode": "HNL",
+      "bigMacPriceUSD": 5.19237952932387,
+      "referenceRateToUSD": 26.77,
+      "comparedToKoreaPercent": 35.4,
+      "summary": "한국보다 약 35% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "HKG": {
+      "isoCode": "HKG",
+      "country": "Hong Kong",
+      "currencyCode": "HKD",
+      "bigMacPriceUSD": 3.2529866882682,
+      "referenceRateToUSD": 7.83895,
+      "comparedToKoreaPercent": -15.2,
+      "summary": "한국보다 약 15% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "HUN": {
+      "isoCode": "HUN",
+      "country": "Hungary",
+      "currencyCode": "HUF",
+      "bigMacPriceUSD": 5.29755674130052,
+      "referenceRateToUSD": 313.352,
+      "comparedToKoreaPercent": 38.1,
+      "summary": "한국보다 약 38% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "IND": {
+      "isoCode": "IND",
+      "country": "India",
+      "currencyCode": "INR",
+      "bigMacPriceUSD": 2.45419485528041,
+      "referenceRateToUSD": 96.26375,
+      "comparedToKoreaPercent": -36,
+      "summary": "한국보다 약 36% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "IDN": {
+      "isoCode": "IDN",
+      "country": "Indonesia",
+      "currencyCode": "IDR",
+      "bigMacPriceUSD": 2.38029338499862,
+      "referenceRateToUSD": 18065,
+      "comparedToKoreaPercent": -37.9,
+      "summary": "한국보다 약 38% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "ISR": {
+      "isoCode": "ISR",
+      "country": "Israel",
+      "currencyCode": "ILS",
+      "bigMacPriceUSD": 7.66845597306038,
+      "referenceRateToUSD": 2.9993,
+      "comparedToKoreaPercent": 99.9,
+      "summary": "한국보다 약 100% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "JPN": {
+      "isoCode": "JPN",
+      "country": "Japan",
+      "currencyCode": "JPY",
+      "bigMacPriceUSD": 3.08384987818793,
+      "referenceRateToUSD": 162.135,
+      "comparedToKoreaPercent": -19.6,
+      "summary": "한국보다 약 20% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "JOR": {
+      "isoCode": "JOR",
+      "country": "Jordan",
+      "currencyCode": "JOD",
+      "bigMacPriceUSD": 3.52609308885755,
+      "referenceRateToUSD": 0.709,
+      "comparedToKoreaPercent": -8.1,
+      "summary": "한국보다 약 8% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "KWT": {
+      "isoCode": "KWT",
+      "country": "Kuwait",
+      "currencyCode": "KWD",
+      "bigMacPriceUSD": 4.52342487883683,
+      "referenceRateToUSD": 0.3095,
+      "comparedToKoreaPercent": 17.9,
+      "summary": "한국보다 약 18% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "LBN": {
+      "isoCode": "LBN",
+      "country": "Lebanon",
+      "currencyCode": "LBP",
+      "bigMacPriceUSD": 5.36013400335008,
+      "referenceRateToUSD": 89550,
+      "comparedToKoreaPercent": 39.7,
+      "summary": "한국보다 약 40% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "MYS": {
+      "isoCode": "MYS",
+      "country": "Malaysia",
+      "currencyCode": "MYR",
+      "bigMacPriceUSD": 3.56792545365375,
+      "referenceRateToUSD": 4.078,
+      "comparedToKoreaPercent": -7,
+      "summary": "한국보다 약 7% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "MEX": {
+      "isoCode": "MEX",
+      "country": "Mexico",
+      "currencyCode": "MXN",
+      "bigMacPriceUSD": 6.26941217071207,
+      "referenceRateToUSD": 17.386,
+      "comparedToKoreaPercent": 63.4,
+      "summary": "한국보다 약 63% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "MDA": {
+      "isoCode": "MDA",
+      "country": "Moldova",
+      "currencyCode": "MDL",
+      "bigMacPriceUSD": 4.55840455840456,
+      "referenceRateToUSD": 17.55,
+      "comparedToKoreaPercent": 18.8,
+      "summary": "한국보다 약 19% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "NZL": {
+      "isoCode": "NZL",
+      "country": "New Zealand",
+      "currencyCode": "NZD",
+      "bigMacPriceUSD": 5.13612000000001,
+      "referenceRateToUSD": 1.71335560695622,
+      "comparedToKoreaPercent": 33.9,
+      "summary": "한국보다 약 34% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "NIC": {
+      "isoCode": "NIC",
+      "country": "Nicaragua",
+      "currencyCode": "NIO",
+      "bigMacPriceUSD": 5.10589963494183,
+      "referenceRateToUSD": 36.6243,
+      "comparedToKoreaPercent": 33.1,
+      "summary": "한국보다 약 33% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "NOR": {
+      "isoCode": "NOR",
+      "country": "Norway",
+      "currencyCode": "NOK",
+      "bigMacPriceUSD": 8.05315079524864,
+      "referenceRateToUSD": 9.68565,
+      "comparedToKoreaPercent": 109.9,
+      "summary": "한국보다 약 110% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "OMN": {
+      "isoCode": "OMN",
+      "country": "Oman",
+      "currencyCode": "OMR",
+      "bigMacPriceUSD": 3.97350993377483,
+      "referenceRateToUSD": 0.38505,
+      "comparedToKoreaPercent": 3.6,
+      "summary": "한국보다 약 4% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "PAK": {
+      "isoCode": "PAK",
+      "country": "Pakistan",
+      "currencyCode": "PKR",
+      "bigMacPriceUSD": 3.88594045156067,
+      "referenceRateToUSD": 277.925,
+      "comparedToKoreaPercent": 1.3,
+      "summary": "한국보다 약 1% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "PER": {
+      "isoCode": "PER",
+      "country": "Peru",
+      "currencyCode": "PEN",
+      "bigMacPriceUSD": 4.99158224296305,
+      "referenceRateToUSD": 3.3857,
+      "comparedToKoreaPercent": 30.1,
+      "summary": "한국보다 약 30% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "PHL": {
+      "isoCode": "PHL",
+      "country": "Philippines",
+      "currencyCode": "PHP",
+      "bigMacPriceUSD": 2.73972602739726,
+      "referenceRateToUSD": 61.685,
+      "comparedToKoreaPercent": -28.6,
+      "summary": "한국보다 약 29% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "POL": {
+      "isoCode": "POL",
+      "country": "Poland",
+      "currencyCode": "PLN",
+      "bigMacPriceUSD": 6.21832951854253,
+      "referenceRateToUSD": 3.77915,
+      "comparedToKoreaPercent": 62.1,
+      "summary": "한국보다 약 62% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "QAT": {
+      "isoCode": "QAT",
+      "country": "Qatar",
+      "currencyCode": "QAR",
+      "bigMacPriceUSD": 4.94369678659709,
+      "referenceRateToUSD": 3.641,
+      "comparedToKoreaPercent": 28.9,
+      "summary": "한국보다 약 29% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "ROU": {
+      "isoCode": "ROU",
+      "country": "Romania",
+      "currencyCode": "RON",
+      "bigMacPriceUSD": 4.00510733032859,
+      "referenceRateToUSD": 4.58165,
+      "comparedToKoreaPercent": 4.4,
+      "summary": "한국보다 약 4% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "SAU": {
+      "isoCode": "SAU",
+      "country": "Saudi Arabia",
+      "currencyCode": "SAR",
+      "bigMacPriceUSD": 5.05992010652463,
+      "referenceRateToUSD": 3.755,
+      "comparedToKoreaPercent": 31.9,
+      "summary": "한국보다 약 32% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "SGP": {
+      "isoCode": "SGP",
+      "country": "Singapore",
+      "currencyCode": "SGD",
+      "bigMacPriceUSD": 5.77496996240456,
+      "referenceRateToUSD": 1.29005,
+      "comparedToKoreaPercent": 50.5,
+      "summary": "한국보다 약 51% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "ZAF": {
+      "isoCode": "ZAF",
+      "country": "South Africa",
+      "currencyCode": "ZAR",
+      "bigMacPriceUSD": 3.4854517611026,
+      "referenceRateToUSD": 16.325,
+      "comparedToKoreaPercent": -9.1,
+      "summary": "한국보다 약 9% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "KOR": {
+      "isoCode": "KOR",
+      "country": "South Korea",
+      "currencyCode": "KRW",
+      "bigMacPriceUSD": 3.83605895416919,
+      "referenceRateToUSD": 1485.9,
+      "comparedToKoreaPercent": 0,
+      "summary": "한국보다 약 0% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "SWE": {
+      "isoCode": "SWE",
+      "country": "Sweden",
+      "currencyCode": "SEK",
+      "bigMacPriceUSD": 7.16142792645525,
+      "referenceRateToUSD": 9.63495,
+      "comparedToKoreaPercent": 86.7,
+      "summary": "한국보다 약 87% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "CHE": {
+      "isoCode": "CHE",
+      "country": "Switzerland",
+      "currencyCode": "CHF",
+      "bigMacPriceUSD": 9.0419272929956,
+      "referenceRateToUSD": 0.80735,
+      "comparedToKoreaPercent": 135.7,
+      "summary": "한국보다 약 136% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "TWN": {
+      "isoCode": "TWN",
+      "country": "Taiwan",
+      "currencyCode": "TWD",
+      "bigMacPriceUSD": 2.42330097087379,
+      "referenceRateToUSD": 32.1875,
+      "comparedToKoreaPercent": -36.8,
+      "summary": "한국보다 약 37% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "THA": {
+      "isoCode": "THA",
+      "country": "Thailand",
+      "currencyCode": "THB",
+      "bigMacPriceUSD": 4.01546698393813,
+      "referenceRateToUSD": 33.62,
+      "comparedToKoreaPercent": 4.7,
+      "summary": "한국보다 약 5% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "TUR": {
+      "isoCode": "TUR",
+      "country": "Turkey",
+      "currencyCode": "TRY",
+      "bigMacPriceUSD": 6.91085003455425,
+      "referenceRateToUSD": 47.0275,
+      "comparedToKoreaPercent": 80.2,
+      "summary": "한국보다 약 80% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "UKR": {
+      "isoCode": "UKR",
+      "country": "Ukraine",
+      "currencyCode": "UAH",
+      "bigMacPriceUSD": 3.33555703802535,
+      "referenceRateToUSD": 44.6702,
+      "comparedToKoreaPercent": -13,
+      "summary": "한국보다 약 13% 저렴해요",
+      "dataDate": "2026-07-01"
+    },
+    "ARE": {
+      "isoCode": "ARE",
+      "country": "United Arab Emirates",
+      "currencyCode": "AED",
+      "bigMacPriceUSD": 5.17309446342758,
+      "referenceRateToUSD": 3.67285,
+      "comparedToKoreaPercent": 34.9,
+      "summary": "한국보다 약 35% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "USA": {
+      "isoCode": "USA",
+      "country": "United States",
+      "currencyCode": "USD",
+      "bigMacPriceUSD": 6.22,
+      "referenceRateToUSD": 1,
+      "comparedToKoreaPercent": 62.1,
+      "summary": "한국보다 약 62% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "URY": {
+      "isoCode": "URY",
+      "country": "Uruguay",
+      "currencyCode": "UYU",
+      "bigMacPriceUSD": 8.9381302128719,
+      "referenceRateToUSD": 40.165,
+      "comparedToKoreaPercent": 133,
+      "summary": "한국보다 약 133% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "VEN": {
+      "isoCode": "VEN",
+      "country": "Venezuela",
+      "currencyCode": "VES",
+      "bigMacPriceUSD": 4.50720283295702,
+      "referenceRateToUSD": 724.8398,
+      "comparedToKoreaPercent": 17.5,
+      "summary": "한국보다 약 17% 비싸요",
+      "dataDate": "2026-07-01"
+    },
+    "VNM": {
+      "isoCode": "VNM",
+      "country": "Vietnam",
+      "currencyCode": "VND",
+      "bigMacPriceUSD": 2.89463160099789,
+      "referenceRateToUSD": 26255.5,
+      "comparedToKoreaPercent": -24.5,
+      "summary": "한국보다 약 25% 저렴해요",
+      "dataDate": "2026-07-01"
+    }
   }
 }
