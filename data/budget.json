@@ -1,12 +1,42 @@
 {
   "japan": {
-    "page": "Japan",
-    "budgetText": "Buy [ edit | edit source ] .mw-parser-output .pp_infobox{color:#333;background-color:#effafa;font-size:90%;border:1px solid #ccc;padding-left:1em;padding-right:1em;text-align:left;width:100%}@media screen{html.skin-theme-clientpref-night .mw-parser-output .pp_infobox td{color:inherit;background-color:inherit}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .pp_infobox td{color:inherit;background-color:inherit}} Exchange rates for Japanese yen As of January 2026: US$1 ≈ ¥155 €1 ≈ ¥185 UK£1 ≈ ¥210 Chinese ¥1 ≈ ¥20 HK$1 ≈ ¥20 SG$1 ≈ ¥120 South Korean ₩1,000 ≈ ¥110 NT$10 ≈ ¥5 Exchange rates fluctuate. Current rates for these and other currencies are available from XE.com The Japanese currency is the Japanese yen , abbreviated ¥ (or JPY in foreign exchange contexts). The symbol 円 (pronounced en ) is used in the Japanese language. Cash is available in the following forms: Coins : ¥1 (silver), ¥5 (gold with a center hole), ¥10 (copper), ¥50 (silver with a center hole), ¥100 (silver), and ¥500. There are three ¥500 coins in circulation, distinguishable by their color. The new ones have a gold ring and a silver center. Bills : ¥1,000 (blue), ¥2,000 (green), ¥5,000 (purple), and ¥10,000 (brown). ¥2,000 bills are rare except in Okinawa . Two series of Japanese yen banknotes are in circulation, the 2004 series and the new 2024 series. All older notes remain legal tender, and remain more widely accepted in vending machines. Prices in Japan are",
-    "updatedAt": "2026-09-02T04:31:31.470Z"
+    "country": "Japan",
+    "bigMacPriceUSD": 3.08384987818793,
+    "comparedToKoreaPercent": -19.6,
+    "summary": "한국보다 약 20% 저렴해요",
+    "dataDate": "2026-07-01",
+    "updatedAt": "2026-09-02T04:46:21.740Z"
   },
   "vietnam": {
-    "page": "Vietnam",
-    "budgetText": "Buy [ edit | edit source ] Money [ edit | edit source ] .mw-parser-output .pp_infobox{color:#333;background-color:#effafa;font-size:90%;border:1px solid #ccc;padding-left:1em;padding-right:1em;text-align:left;width:100%}@media screen{html.skin-theme-clientpref-night .mw-parser-output .pp_infobox td{color:inherit;background-color:inherit}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .pp_infobox td{color:inherit;background-color:inherit}} Exchange rates for Vietnamese đồng As of January 2026: US$1 ≈ 26,000&#160;dong €1 ≈ 31,000&#160;dong UK£1 ≈ 36,000&#160;dong AU$1 ≈ 18,000&#160;dong Chinese ¥1 ≈ 3,800&#160;dong SG$1 ≈ 20,000&#160;dong Thai ฿10 ≈ 8,400&#160;dong Exchange rates fluctuate. Current rates for these and other currencies are available from XE.com The national currency is the dong ( đồng ), sometimes denoted by the symbol \" ₫ \" (ISO code: VND ). Prices are usually shown without a currency notation, e.g. as \"100.000\", \"100k\" or \"100K\", and in speech it's common to drop the thousands completely. Wikivoyage articles will use dong to denote the currency. Notes are available in denominations of 1,000, 2,000, 5,000, 10,000, 20,000, 50,000, 100,000, 200,000 and 500,000 dong. Smaller bills and coins in denominations up to 5,000 dong also exist, but are rarely seen. While they are legal tender, they are difficult to get rid of if you end up with some. ATMs [ edit | edit source ] ATMs are common and can be found in most cities a",
-    "updatedAt": "2026-09-02T04:31:34.842Z"
+    "country": "Vietnam",
+    "bigMacPriceUSD": 2.89463160099789,
+    "comparedToKoreaPercent": -24.5,
+    "summary": "한국보다 약 25% 저렴해요",
+    "dataDate": "2026-07-01",
+    "updatedAt": "2026-09-02T04:46:21.740Z"
+  },
+  "thailand": {
+    "country": "Thailand",
+    "bigMacPriceUSD": 4.01546698393813,
+    "comparedToKoreaPercent": 4.7,
+    "summary": "한국보다 약 5% 비싸요",
+    "dataDate": "2026-07-01",
+    "updatedAt": "2026-09-02T04:46:21.741Z"
+  },
+  "taiwan": {
+    "country": "Taiwan",
+    "bigMacPriceUSD": 2.42330097087379,
+    "comparedToKoreaPercent": -36.8,
+    "summary": "한국보다 약 37% 저렴해요",
+    "dataDate": "2026-07-01",
+    "updatedAt": "2026-09-02T04:46:21.741Z"
+  },
+  "philippines": {
+    "country": "Philippines",
+    "bigMacPriceUSD": 2.73972602739726,
+    "comparedToKoreaPercent": -28.6,
+    "summary": "한국보다 약 29% 저렴해요",
+    "dataDate": "2026-07-01",
+    "updatedAt": "2026-09-02T04:46:21.741Z"
   }
 }
