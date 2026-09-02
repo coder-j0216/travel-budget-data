@@ -16,9 +16,13 @@ async function getBudgetText(page) {
   const sectionsData = await sectionsRes.json();
 
   const budgetSection = sectionsData.parse.sections.find((s) => {
-  const title = s.line.toLowerCase();
-  return title.includes('cost') || title.includes('money') || title.includes('budget');
-});
+  const allSections = sectionsData.parse.sections;
+// 우선순위: "Costs"를 정확히 찾고, 없으면 "budget", 그래도 없으면 "money" 순으로
+const budgetSection =
+  allSections.find((s) => s.line.toLowerCase() === 'costs') ||
+  allSections.find((s) => s.line.toLowerCase().includes('cost')) ||
+  allSections.find((s) => s.line.toLowerCase().includes('budget')) ||
+  allSections.find((s) => s.line.toLowerCase().includes('money'));
   if (!budgetSection) return null;
 
   const textUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&section=${budgetSection.index}&prop=text&format=json`;
