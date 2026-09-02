@@ -1,6 +1,5 @@
 import fs from 'fs';
 
-// 데이터를 가져올 5개 나라 (위키보야지 영문 페이지 이름 기준)
 const COUNTRIES = [
   { key: 'japan', page: 'Japan' },
   { key: 'vietnam', page: 'Vietnam' },
@@ -9,31 +8,53 @@ const COUNTRIES = [
   { key: 'philippines', page: 'Philippines' },
 ];
 
-// 페이지 안에서 "Costs"(물가 정보) 섹션을 찾아 텍스트로 가져오는 함수
+// 이 단어들이 제목에 들어간 섹션들만 후보로 검토함
+const CANDIDATE_KEYWORDS = ['cost', 'budget', 'money', 'buy', 'sleep'];
+
+// 텍스트 안에 "가격처럼 생긴 표현"이 몇 번 나오는지 세는 함수
+function countPricePatterns(text) {
+  const matches = text.match(/[¥₫₱฿$€£]\s?\d|\d[,.]?\d*\s?(yen|dong|baht|peso|dollar|won|NT\$)/gi);
+  return matches ? matches.length : 0;
+}
+
+async function fetchSectionText(page, sectionIndex) {
+  const url = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&section=${sectionIndex}&prop=text&format=json`;
+  const res = await fetch(url);
+  const data = await res.json();
+  const html = data.parse.text['*'];
+  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
 async function getBudgetText(page) {
   const sectionsUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&prop=sections&format=json`;
   const sectionsRes = await fetch(sectionsUrl);
   const sectionsData = await sectionsRes.json();
-
   const allSections = sectionsData.parse.sections;
 
-  // 우선순위: "Costs"와 정확히 일치 > "cost" 포함 > "budget" 포함 > "money" 포함
-  const budgetSection =
-    allSections.find((s) => s.line.toLowerCase() === 'costs') ||
-    allSections.find((s) => s.line.toLowerCase().includes('cost')) ||
-    allSections.find((s) => s.line.toLowerCase().includes('budget')) ||
-    allSections.find((s) => s.line.toLowerCase().includes('money'));
+  // 제목에 후보 키워드가 들어간 섹션들만 추려냄
+  const candidates = allSections.filter((s) =>
+    CANDIDATE_KEYWORDS.some((kw) => s.line.toLowerCase().includes(kw))
+  );
+  if (candidates.length === 0) return null;
 
-  if (!budgetSection) return null;
+  // 후보 섹션들을 하나씩 확인해서, 가격 표현이 제일 많은 걸 선택
+  let bestText = null;
+  let bestScore = -1;
 
-  const textUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&section=${budgetSection.index}&prop=text&format=json`;
-  const textRes = await fetch(textUrl);
-  const textData = await textRes.json();
+  for (const section of candidates) {
+    const text = await fetchSectionText(page, section.index);
+    const score = countPricePatterns(text);
+    if (score > bestScore) {
+      bestScore = score;
+      bestText = text;
+    }
+    await new Promise((r) => setTimeout(r, 300));
+  }
 
-  const html = textData.parse.text['*'];
-  // HTML 태그를 제거해서 순수 텍스트만 남김
-  const plainText = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-  return plainText.slice(0, 1500); // 너무 길면 1500자까지만 저장
+  // 가격 표현이 너무 적으면(3개 미만) 신뢰할 수 없다고 보고 비워둠
+  if (bestScore < 3) return null;
+
+  return bestText.slice(0, 1500);
 }
 
 async function main() {
@@ -50,7 +71,7 @@ async function main() {
     } catch (e) {
       console.error(`실패: ${country.page}`, e.message);
     }
-    await new Promise((r) => setTimeout(r, 500)); // 서버 부담 줄이기용 딜레이
+    await new Promise((r) => setTimeout(r, 500));
   }
 
   fs.mkdirSync('data', { recursive: true });
