@@ -9,20 +9,21 @@ const COUNTRIES = [
   { key: 'philippines', page: 'Philippines' },
 ];
 
-// 페이지 안에서 "Budget"이라는 이름의 섹션을 찾아 텍스트로 가져오는 함수
+// 페이지 안에서 "Costs"(물가 정보) 섹션을 찾아 텍스트로 가져오는 함수
 async function getBudgetText(page) {
   const sectionsUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&prop=sections&format=json`;
   const sectionsRes = await fetch(sectionsUrl);
   const sectionsData = await sectionsRes.json();
 
-  const budgetSection = sectionsData.parse.sections.find((s) => {
   const allSections = sectionsData.parse.sections;
-// 우선순위: "Costs"를 정확히 찾고, 없으면 "budget", 그래도 없으면 "money" 순으로
-const budgetSection =
-  allSections.find((s) => s.line.toLowerCase() === 'costs') ||
-  allSections.find((s) => s.line.toLowerCase().includes('cost')) ||
-  allSections.find((s) => s.line.toLowerCase().includes('budget')) ||
-  allSections.find((s) => s.line.toLowerCase().includes('money'));
+
+  // 우선순위: "Costs"와 정확히 일치 > "cost" 포함 > "budget" 포함 > "money" 포함
+  const budgetSection =
+    allSections.find((s) => s.line.toLowerCase() === 'costs') ||
+    allSections.find((s) => s.line.toLowerCase().includes('cost')) ||
+    allSections.find((s) => s.line.toLowerCase().includes('budget')) ||
+    allSections.find((s) => s.line.toLowerCase().includes('money'));
+
   if (!budgetSection) return null;
 
   const textUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&section=${budgetSection.index}&prop=text&format=json`;
