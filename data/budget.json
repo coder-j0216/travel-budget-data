@@ -1,0 +1,27 @@
+{
+  "japan": {
+    "page": "Japan",
+    "budgetText": null,
+    "updatedAt": "2026-09-02T01:10:12.972Z"
+  },
+  "vietnam": {
+    "page": "Vietnam",
+    "budgetText": null,
+    "updatedAt": "2026-09-02T01:10:13.636Z"
+  },
+  "thailand": {
+    "page": "Thailand",
+    "budgetText": null,
+    "updatedAt": "2026-09-02T01:10:14.340Z"
+  },
+  "taiwan": {
+    "page": "Taiwan",
+    "budgetText": null,
+    "updatedAt": "2026-09-02T01:10:15.035Z"
+  },
+  "philippines": {
+    "page": "Philippines",
+    "budgetText": null,
+    "updatedAt": "2026-09-02T01:10:18.111Z"
+  }
+}
