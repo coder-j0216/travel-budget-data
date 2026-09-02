@@ -15,9 +15,10 @@ async function getBudgetText(page) {
   const sectionsRes = await fetch(sectionsUrl);
   const sectionsData = await sectionsRes.json();
 
-  const budgetSection = sectionsData.parse.sections.find((s) =>
-    s.line.toLowerCase().includes('budget')
-  );
+  const budgetSection = sectionsData.parse.sections.find((s) => {
+  const title = s.line.toLowerCase();
+  return title.includes('cost') || title.includes('money') || title.includes('budget');
+});
   if (!budgetSection) return null;
 
   const textUrl = `https://en.wikivoyage.org/w/api.php?action=parse&page=${encodeURIComponent(page)}&section=${budgetSection.index}&prop=text&format=json`;
